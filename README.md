@@ -1,6 +1,6 @@
 # Learning Robust Neural Networks Using Constraint Programming  
 
-## 📌 Overview  
+## Overview  
 This project explores a novel neuro-symbolic approach to **training robust binarized neural networks (BNNs)** using **Constraint Programming**.  
 While traditional training methods provide no formal guarantees of robustness against adversarial perturbations, this work uses CP to **enforce robustness and fairness constraints** directly into the training process.  
 
@@ -8,7 +8,7 @@ Building on the CP formulation of neural networks proposed by *Icarte et al. (20
 
 ---
 
-## ✨ Key Features  
+## Key Features  
 - **Constraint Programming Training**: Formulates BNN training as a COP using IBM ILOG CP Optimizer.  
 - **Robustness Enforcement**: Ensures adversarial robustness by incorporating robustness constraints based on defined perturbation set.  
 - **Fairness Constraints**: Added as robustness with respect to sensitive attribute (fairness-through-unawareness).  
@@ -19,7 +19,7 @@ Building on the CP formulation of neural networks proposed by *Icarte et al. (20
 
 ---
 
-## 🧮 CP Formulation  
+## CP Formulation  
 
 The CP model can be defined with different objectives:  
 
@@ -57,7 +57,7 @@ where, $\rho$ represents the fraction of training examples correctly classified 
 
 ---
 
-## 🔒 Robustness Constraints  
+## Robustness Constraints  
 
 For robustness, we define perturbation sets and enforce neuron activation stability.  
 
@@ -85,17 +85,18 @@ Constraint:
 
 ---
 
-## ⚙️ Tech Stack  
+## Tech Stack  
 - **Languages**: Python 3.8  
 - **Libraries**:  
   - Machine Learning: `Keras`, `TensorFlow`, `Larq`, `Scikit-learn`  
-  - Optimization: `Docplex`, `IBM ILOG CP Optimizer`  
+  - Optimization: `Docplex` 
   - Data Processing: `Pandas`, `NumPy`, `Imbalanced-learn`  
-  - Visualization: `Seaborn`  
+  - Visualization: `Seaborn`
+- **Software**: IBM ILOG CP Optimizer  
 
 ---
 
-## 📂 Datasets  
+## Datasets  
 - **German Credit Dataset** → Sensitive attribute: *Age*  
 - **Mushroom Dataset** → No sensitive attribute   
 
